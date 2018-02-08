@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     font-family: Roboto, "游ゴシック", YuGothic, "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
     background-color: #f2f2f2;
@@ -19,3 +24,64 @@ div#logo-word {
     width: 214px;
     margin: 10px auto 0;
 }
+div#mail {
+    width: 60px;
+    margin: 240px auto 0;
+}
+div#mail img {
+    width: 60px;
+}
+div#contact {
+    width: 600px;
+    height: 550px;
+    position: fixed;
+    border: 2px solid #FFBF00;
+    background-color: #FFF;
+    display: none;
+    z-index: 2;
+    /*text-align: center;*/
+}
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 165, 0, 0.3);
+    display: none;
+    z-index: 1;
+}
+button {
+  width: 100px;
+  height: 50px;
+  font-size: 1.2em;
+  color: #FFBF00;
+  background-color: #FFF;
+  border: solid 2px #FFBF00;
+  border-radius: 3px;
+  transition: .4s;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+ul.style-none {
+    width: 500px;
+    margin: 0 auto;
+}
+
+ul.style-none li {
+    list-style: none;
+    margin-top: 30px;
+}
+
+li input {
+    height: 24px;
+}
+
+.form-label {
+    margin-right: 10px;
+    width:100px;
+    float: left;
+}
+

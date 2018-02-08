@@ -22,6 +22,32 @@
         <div id="logo-word">
             <img src="images/logo-word.png" alt="会社ロゴテキスト">
         </div>
+        <div id="mail">
+            <img src="images/mail.png" alt="メール">
+        </div>
     </div>
+    <div id="overlay"></div>
+    <div id="contact">
+        <form id="contact-form" action="/index_submit" method="post" accept-charset="utf-8">
+
+        <ul class="style-none">
+            <li class="name">
+                <label class="form-label" for="name">Name</label>
+                <input id="name" type="text" name="name" placeholder="your name" size="50">
+            </li>
+            <li class="email">
+                <label class="form-label" for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="email address" size="50" rows="20">
+            </li>
+            <li class="msg">
+                <label class="form-label" for="message">Message</label>
+                <textarea id="message" name="message" cols="50" rows="20"></textarea>
+            </li>
+            <li><button id="send">send</button></li>
+        </ul>
+        </form>
+    </div>
+
+
 </body>
 </html>
