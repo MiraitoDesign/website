@@ -11,11 +11,6 @@ body {
     margin: 0;
 }
 
-div#content {
-    width: 1280px;
-    background: #fff6ef;
-    margin: 0 auto;
-}
 div#logo {
     width: 193px;
     margin: 300px auto 0;
@@ -30,6 +25,9 @@ div#mail {
 }
 div#mail img {
     width: 60px;
+}
+div#mail img:hover {
+   cursor: pointer;
 }
 div#contact {
     width: 600px;
