@@ -7,28 +7,95 @@ ul {
 
 body {
     font-family: Roboto, "游ゴシック", YuGothic, "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
-    background-color: #fff6ef;
+    background-color: #fff6ef; */
     margin: 0;
 }
 
-div#logo {
-    width: 193px;
-    margin: 300px auto 0;
+div#content {
+    display: flex;
 }
+
+div#home-content {
+    width: 300px;
+    left: 350px;
+/*    position: relative; */
+    position: fixed;
+    z-index: 100;
+}
+
+.fixed {
+    position: fixed;
+}
+
+div#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 1000px;
+    background: linear-gradient(170deg, #ffd5a3 3%, #fff6ef 10%, #fff6ef);
+}
+
+div#bar-line {
+    position: fixed;
+    top: 420px;
+    left: 200px;
+    width: 600px;
+    height: 10px;
+    background: linear-gradient(to right, #fff6ef 10% , #ffd5a3 40%, #fff6ef);
+}
+
+div#golden-ratio {
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: auto;
+    display: none;
+}
+
+div#golden-ratio img {
+    width: 100%;
+    height: auto;
+}
+
 div#logo-word {
-    width: 214px;
-    margin: 10px auto 0;
+    margin: 110px 0px 0 30px; /* 左が (300-240)/2 */
 }
-div#mail {
-    width: 60px;
-    margin: 240px auto 0;
+
+div#logo-word img {
+    width: 240px;
 }
-div#mail img {
-    width: 60px;
+
+div#logo {
+    margin: 64px 0 0 53px; /* 左が (300-194)/2 */
+    width: 194px;
 }
-div#mail img:hover {
-   cursor: pointer;
+
+div#icon-container {
+    margin: 58px auto 0;
+    display: flex;
+    justify-content: center;
 }
+.icon {
+    display: inline-block;
+    margin: 0 10px 0;
+}
+.icon img {
+    width: 40px;
+}
+
+.clickable img {
+    transition-duration: 0.2s;
+}
+
+.clickable img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+}
+
 div#contact {
     width: 600px;
     height: 550px;
@@ -83,3 +150,43 @@ li input {
     float: left;
 }
 
+div#detail-content {
+    width: 600px;
+    position: relative;
+    top: 0;
+    left: 700px;
+    display: none;
+    margin: 0 0 0 290px;
+}
+
+div#detail-company {
+    position: absolute;
+    top: 20px;
+    display: none;
+}
+
+div#detail-company ul {
+    position: relative;
+    left: 50px;
+}
+
+div#detail-service {
+    position: absolute;
+    top: 20px;
+    display: none;
+}
+
+div#detail-service ul {
+    position: relative;
+    left: 50px;
+}
+
+div#detail-contact {
+    position: absolute;
+    top: 20px;
+    display: none;
+}
+
+img{
+    -webkit-backface-visibility: hidden;
+}
