@@ -15,154 +15,42 @@
     <title>株式会社ミライトデザイン</title>
 </head>
 <body>
-    <div id="background"></div>
-    <div id="bar-line"></div>
-
-    <div id="golden-ratio">
-        <img src="images/golden_1000.png">
-    </div>
-
 
     <div id="content">
-        <div id = "home-content">
-            <div id="logo-word">
-                <img src="images/logo-word.png" alt="会社ロゴテキスト">
-            </div>
-            <div id="logo" class="clickable close-detail-content">
-                <img src="images/logo.png" alt="会社ロゴ">
+        <div id="center">
+            <div id="golden-ratio">
+                <img src="images/golden_1000.png">
             </div>
 
-            <div id="icon-container">
-                <!--
-                <div id="home" class="icon close-detail-content">
-                    <img src="images/home.png" alt="ホーム">
+            <div id = "home-content">
+                <div id="logo-word" class="golden-ratio-switch">
+                    <img src="images/logo-word.png" alt="会社ロゴテキスト">
                 </div>
-                -->
-                <div id="company" class="icon clickable open-detail-content">
-                    <img src="images/company.png" alt="会社概要">
+                <div id="logo">
+                    <img src="images/logo.png" alt="会社ロゴ">
                 </div>
-                <div id="service" class="icon clickable open-detail-content">
-                    <img src="images/service.png" alt="サービス">
-                </div>
-                <div id="mail" class="icon clickable open-detail-content">
-                    <img src="images/mail.png" alt="メール">
-                </div>
-                <div id="facebook" class="icon">
-                    <a href="https://www.facebook.com/MiraitoDesign/" target="_blank">
-                        <img src="images/FB-f-Logo__blue_144.png" alt="facebook">
-                    </a>
+
+                <div id="icon-container">
+                    <div id="home" class="icon clickable close-detail-content">
+                        <img src="images/home.png" alt="ホーム">
+                    </div>
+                    <div id="company" class="icon clickable open-detail-content">
+                        <img src="images/company.png" alt="会社概要">
+                    </div>
+                    <div id="service" class="icon clickable open-detail-content">
+                        <img src="images/service.png" alt="サービス">
+                    </div>
+                    <div id="mail" class="icon clickable open-detail-content">
+                        <img src="images/mail.png" alt="メール">
+                    </div>
+                    <div id="facebook" class="icon">
+                        <a href="https://www.facebook.com/MiraitoDesign/" target="_blank">
+                            <img src="images/FB-f-Logo__blue_144.png" alt="facebook">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div id="detail-content">
-            <div id="detail-company">
-                <h1>会社概要</h1>
-                <ul>
-                    <li>商号: 株式会社ミライトデザイン</li>
-                    <li>設立: 2018年2月</li>
-                    <li>所在地: 〒151-0053 東京都渋谷区代々木4-23-13</li>
-                    <li>資本金: 500万円</li>
-                    <li>代表取締役/CEO: 林 弘勝</li>
-                    <li>取締役/CTO: 宇田川 泰</li>
-                </ul>
-
-                <h1>事業内容</h1>
-                <ul>
-                    <li>システム構築などのソフトウェア開発</li>
-                    <li>運用保守や品質管理</li>
-                </ul>
-            </div>
-
-            <div id="detail-service">
-                <h1>サービス</h1>
-                <h2>設計に特化したソフトウェア開発</h2>
-                <ul>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                </ul>
-                <h2>サービス内容テスト</h2>
-                <ul>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                </ul>
-                <h2>コンテンツ内容が長い場合のサンプル</h2>
-                <ul>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                    <li>テスト文言</li>
-                </ul>
-            </div>
-
-            <div id="detail-contact">
-                <h1>お問い合せ</h1>
-                <form id="contact-form" action="/index_submit" method="post" accept-charset="utf-8">
-                    <ul class="style-none">
-                        <li class="name">
-                            <label class="form-label" for="name">Name</label>
-                            <input id="name" type="text" name="name" placeholder="your name" size="50">
-                        </li>
-                        <li class="email">
-                            <label class="form-label" for="email">Email</label>
-                            <input id="email" type="email" name="email" placeholder="email address" size="50" rows="20">
-                        </li>
-                        <li class="msg">
-                            <label class="form-label" for="message">Message</label>
-                            <textarea id="message" name="message" cols="50" rows="20"></textarea>
-                        </li>
-                        <li><button id="send">send</button></li>
-                    </ul>
-                </form>
-            </div>
-        </div>
-
     </div>
-
-    <!--
-    <div id="overlay"></div>
-    <div id="contact">
-        <form id="contact-form" action="/index_submit" method="post" accept-charset="utf-8">
-
-        <ul class="style-none">
-            <li class="name">
-                <label class="form-label" for="name">Name</label>
-                <input id="name" type="text" name="name" placeholder="your name" size="50">
-            </li>
-            <li class="email">
-                <label class="form-label" for="email">Email</label>
-                <input id="email" type="email" name="email" placeholder="email address" size="50" rows="20">
-            </li>
-            <li class="msg">
-                <label class="form-label" for="message">Message</label>
-                <textarea id="message" name="message" cols="50" rows="20"></textarea>
-            </li>
-            <li><button id="send">send</button></li>
-        </ul>
-        </form>
-    </div>
-    -->
 </body>
 </html>

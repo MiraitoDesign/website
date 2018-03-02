@@ -13,46 +13,37 @@ body {
 
 div#content {
     display: flex;
+    justify-content: center;
+}
+
+div#center {
+    width: 1000px;
+}
+
+div#detail-center {
+    width: 1000px;
+    display: flex;
 }
 
 div#home-content {
-    width: 300px;
-    left: 350px;
-/*    position: relative; */
-    position: fixed;
-    z-index: 100;
+/*    left: 350px; */
+/*    position: fixed; */
 }
 
 .fixed {
     position: fixed;
 }
 
-div#background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 1000px;
-    height: 1000px;
-    background: linear-gradient(170deg, #ffd5a3 3%, #fff6ef 10%, #fff6ef);
-}
-
-div#bar-line {
-    position: fixed;
-    top: 420px;
-    left: 200px;
-    width: 600px;
-    height: 10px;
-    background: linear-gradient(to right, #fff6ef 10% , #ffd5a3 40%, #fff6ef);
-}
-
 div#golden-ratio {
     opacity: 0.5;
     position: fixed;
     top: 0;
-    left: 0;
     width: 1000px;
     height: auto;
+    /*
     display: none;
+    */
+    z-index: -1;
 }
 
 div#golden-ratio img {
@@ -61,7 +52,9 @@ div#golden-ratio img {
 }
 
 div#logo-word {
-    margin: 110px 0px 0 30px; /* 左が (300-240)/2 */
+    margin: 110px 0 0 0;
+    display: flex;
+    justify-content: center;
 }
 
 div#logo-word img {
@@ -69,12 +62,13 @@ div#logo-word img {
 }
 
 div#logo {
-    margin: 64px 0 0 53px; /* 左が (300-194)/2 */
-    width: 194px;
+    margin: 64px 0 0 0px;
+    display: flex;
+    justify-content: center;
 }
 
 div#icon-container {
-    margin: 58px auto 0;
+    margin: 40px 0 0 0;
     display: flex;
     justify-content: center;
 }
@@ -150,19 +144,18 @@ li input {
     float: left;
 }
 
+div#left-icon-container {
+    width: 50px;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin: 0;
+}
+
 div#detail-content {
-    width: 600px;
-    position: relative;
-    top: 0;
-    left: 700px;
-    display: none;
-    margin: 0 0 0 290px;
+    padding-left: 100px;
 }
 
 div#detail-company {
-    position: absolute;
-    top: 20px;
-    display: none;
 }
 
 div#detail-company ul {
@@ -171,9 +164,6 @@ div#detail-company ul {
 }
 
 div#detail-service {
-    position: absolute;
-    top: 20px;
-    display: none;
 }
 
 div#detail-service ul {
@@ -182,9 +172,6 @@ div#detail-service ul {
 }
 
 div#detail-contact {
-    position: absolute;
-    top: 20px;
-    display: none;
 }
 
 img{
